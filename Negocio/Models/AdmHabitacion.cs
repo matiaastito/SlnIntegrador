@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Negocio.Models
 {
-    public class AdmHabitacion
+    public static class AdmHabitacion
     {
-        List<Habitacion> habitaciones;
+        static List<Habitacion> habitaciones;
 
         #region Metodos
 
-        public List<Habitacion> Listar()
+        public static List<Habitacion> Listar()
         {
             habitaciones = new List<Habitacion>()
             {
@@ -34,25 +34,25 @@ namespace Negocio.Models
             return habitaciones;
         }
 
-        public List<Habitacion> Listar(string estado)
+        public static List<Habitacion> Listar(string estado)
         {
             //TODO mostrar habitaciones x estado
             return null;
         }
 
-        public int Insertar(Habitacion habitacion)
+        public static int Insertar(Habitacion habitacion)
         {
             //TODO inserta habitacion ; retorna el id de la habitacion agregada
             return 0;
         }
 
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             //TODO elimina una habitacion x id; retorna el id eliminado
             return 0;
         }
 
-        public Habitacion TraerUno(int numero)
+        public static Habitacion TraerUno(int numero)
         {
             //TODO muestra 1 habitacion x numero; retorna esa habitacion
             return null;

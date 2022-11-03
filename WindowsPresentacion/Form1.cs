@@ -17,11 +17,6 @@ namespace WindowsPresentacion
 
         #region definicion y creacion de instancias
 
-        #region administradores
-        AdmMedico administradorMedico = new AdmMedico();
-        AdmHabitacion administradorHabitacion = new AdmHabitacion();
-        AdmPaciente admPaciente = new AdmPaciente();
-        #endregion
 
         #region listas
         List<Medico> listaMedicos;
@@ -39,17 +34,17 @@ namespace WindowsPresentacion
 
         private void btnListarMedicos_Click(object sender, EventArgs e)
         {
-            listaMedicos = administradorMedico.Listar();
+            listaMedicos = AdmMedico.Listar();
         }
 
         private void btnListarPacientes_Click(object sender, EventArgs e)
         {
-            listaPaciente = admPaciente.Listar();
+            listaPaciente = AdmPaciente.Listar();
         }
 
         private void btnListarHabitaciones_Click(object sender, EventArgs e)
         {
-            listaHabitaciones = administradorHabitacion.Listar();
+            listaHabitaciones = AdmHabitacion.Listar();
         }
 
         private void btnMostarListaMedicos_Click(object sender, EventArgs e)

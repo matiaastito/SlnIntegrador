@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Negocio.Models
 {
-    public class AdmPaciente
+    public static class AdmPaciente
     {
-        List<Paciente> pacientes;
+        static List<Paciente> pacientes;
 
         #region Metodos
 
-        public List<Paciente> Listar()
+        public static List<Paciente> Listar()
         {
             pacientes = new List<Paciente>()
             {
@@ -33,19 +33,19 @@ namespace Negocio.Models
             //TODO mostrar lista de pacientes 
             return pacientes;
         }
-        public int Insertar(Paciente paciente)
+        public static int Insertar(Paciente paciente)
         {
             //TODO inserta paciente ; retorna el id del paciente agregado
             return 0;
         }
 
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             //TODO elimina un paciente x id; retorna el id eliminado
             return 0;
         }
 
-        public Paciente TraerUno(string nroHistoriaMedica)
+        public static Paciente TraerUno(string nroHistoriaMedica)
         {
             //TODO muestra 1 paciente x id; retorna ese paciente
             return null;

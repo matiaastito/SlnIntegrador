@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Negocio.Models
 {
-    public class AdmMedico
+    public static class AdmMedico
     {
-        List<Medico> medicos;
+        static List<Medico> medicos;
 
         #region Metodos
 
-        public List<Medico> Listar()
+        public static List<Medico> Listar()
         {
 
             medicos = new List<Medico>()
@@ -36,25 +36,25 @@ namespace Negocio.Models
             return medicos;
         }
 
-        public List<Medico> Listar(string especialidad)
+        public static List<Medico> Listar(string especialidad)
         {
             //TODO mostrar listado medico x especialidad
             return null;
         }
 
-        public int Insertar (Medico medico)
+        public static int Insertar (Medico medico)
         {
             //TODO inserta medico ; retorna el id del medico agregado
             return 0;
         }
 
-        public int Eliminar (int id) 
+        public static int Eliminar (int id) 
         {
             //TODO elimina un medico x id; retorna el id eliminado
             return 0;
         }
 
-        public Medico TraerUno(int id)
+        public static Medico TraerUno(int id)
         {
             //TODO muestra 1 medico x id; retorna ese medico
             return null;
