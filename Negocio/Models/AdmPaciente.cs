@@ -17,14 +17,14 @@ namespace Negocio.Models
         {
             pacientes = new List<Paciente>()
             {
-                new Paciente("JP00045",0,"Javier", "Poljkstre", "Calle falsa 123", "665456","JaviePoljkstrer@gmail.com"),
-                new Paciente("MG00046",1,"Marcos", "Gustavez", "Calle VERDADERA 456", "1234578","marcosGustavez_12@gmail.com")
+                new Paciente( new DateTime(1996,10,27), "JP00045",0,"Javier", "Poljkstre", "Calle falsa 123", "665456","JaviePoljkstrer@gmail.com"),
+                new Paciente( new DateTime(1981,11,27), "MG00046",1,"Marcos", "Gustavez", "Calle VERDADERA 456", "1234578","marcosGustavez_12@gmail.com")
             };
-            Paciente paciente3 = new Paciente("MG00045", 2, "Marcela", "Gimenez", "Calle falsa 1234", "123", "marcelita_gimenez@gmail.com");
+            Paciente paciente3 = new Paciente(new DateTime(2000, 1, 25), "MG00045", 2, "Marcela", "Gimenez", "Calle falsa 1234", "123", "marcelita_gimenez@gmail.com");
 
-            Paciente paciente4 = new Paciente("MP00123", 3, "Melody", "Pichichi", "Calle falsa 1235", "456", "pichichi_melu@gmail.com");
+            Paciente paciente4 = new Paciente(new DateTime(2005, 10, 5), "MP00123", 3, "Melody", "Pichichi", "Calle falsa 1235", "456", "pichichi_melu@gmail.com");
 
-            Paciente paciente5 = new Paciente("JG00002", 4, "Juan", "Gomez", "Calle falsa 1236", "789", "jg_eyou23@gmail.com");
+            Paciente paciente5 = new Paciente(new DateTime(1975, 12, 6), "JG00002", 4, "Juan", "Gomez", "Calle falsa 1236", "789", "jg_eyou23@gmail.com");
 
             pacientes.Add(paciente3);
             pacientes.Add(paciente4);
